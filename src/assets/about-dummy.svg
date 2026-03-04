@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="About placeholder image">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0F172A"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="url(#g1)" opacity="0.2"/>
+  <text x="100" y="180" font-size="64" font-family="Inter, Arial, sans-serif" fill="#E2E8F0">Project Overview</text>
+  <text x="100" y="250" font-size="34" font-family="Inter, Arial, sans-serif" fill="#CBD5E1">Dummy image placeholder</text>
+</svg>
