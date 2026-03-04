@@ -13,6 +13,23 @@ import {
   Smartphone,
 } from "lucide-react";
 
+import batteryPack from "../assets/images/batteryPack.png";
+import Buckconverter from "../assets/images/buck.png";
+import Enclosure from "../assets/images/enclosure.png";
+import GearMotor from "../assets/images/gearMotor.png";
+import GearMotorDriver from "../assets/images/gearMotorDriver.png";
+import L298N from "../assets/images/l298n.png";
+import IRSensors from "../assets/images/irsensor.png";
+import Wheels from "../assets/images/wheels.png";
+import ESP32 from "../assets/images/esp32.png";
+import RFIDReader from "../assets/images/rfidReader.png";
+import RFIDCard from "../assets/images/rfidCard.png";
+import Stepper from "../assets/images/stepper.png";
+import A4988 from "../assets/images/a4988.png";
+import ThreadRod from "../assets/images/threadRod.png";
+import GuideRod from "../assets/images/nonthreadrod.png";
+import Pump from "../assets/images/dcpump.png";
+
 export const siteContent = {
   brand: {
     title:
@@ -209,7 +226,7 @@ export const siteContent = {
       heading: { title: "System architecture", subtitle: "How modules connect across robot, ML, and IoT." },
       diagram: {
         alt: "Architecture diagram placeholder",
-        src: "/src/assets/architecture-diagram.svg",
+        src: "/src/assets/images/ComponentDiagram.png",
       },
       blocks: [
         { title: "Autonomous robot", description: "Line following, RFID stop points, vertical scanning, spraying." },
@@ -414,39 +431,32 @@ export const siteContent = {
       {
         title: "Power & enclosure",
         items: [
-          { name: "4 × 18650 Li-ion (3.7V)", detail: "Series configuration for ~12V rail (prototype)" },
-          { name: "2 × Buck converters", detail: "12V→5V and logic regulation" },
-          { name: "Plastic enclosure", detail: "300×250×120 mm housing for electronics" },
+          { name: "4 × 18650 Li-ion (3.7V)", detail: "Series configuration for ~12V rail (prototype)", image: batteryPack },
+          { name: "2 × Buck converters", detail: "12V→5V and logic regulation", image: Buckconverter },
+          { name: "Plastic enclosure", detail: "300×250×120 mm housing for electronics", image: Enclosure },
         ],
       },
       {
         title: "Drive & navigation",
         items: [
-          { name: "4 × Gear motors", detail: "Four-wheel drive prototype" },
-          { name: "2 × BTS7960 drivers", detail: "High-current motor control" },
-          { name: "L298N driver", detail: "Additional motor control support" },
-          { name: "2 × Analog IR sensors", detail: "Line detection for navigation" },
-          { name: "4 wheels", detail: "8 cm diameter wheels for mobility" },
+          { name: "4 × Gear motors", detail: "Four-wheel drive prototype", image: GearMotor },
+          { name: "2 × BTS7960 drivers", detail: "High-current motor control", image: GearMotorDriver },
+          { name: "L298N driver", detail: "Additional motor control support", image: L298N },
+          { name: "2 × Analog IR sensors", detail: "Line detection for navigation", image: IRSensors },
+          { name: "4 wheels", detail: "8 cm diameter wheels for mobility", image: Wheels },
         ],
       },
       {
         title: "Identification & scanning",
         items: [
-          { name: "ESP32 DevKit V1", detail: "Main controller / connectivity (prototype)" },
-          { name: "RC522 RFID module", detail: "13.56 MHz plant-level identification" },
-          { name: "RFID cards/tags", detail: "Unique plant IDs placed per plant" },
-          { name: "NEMA 17 stepper", detail: "Vertical scanning mechanism drive" },
-          { name: "A4988 driver", detail: "1/16 microstepping" },
-          { name: "0.5 m threaded rod", detail: "Vertical motion (lead screw style)" },
-          { name: "0.75 m guide rod", detail: "Non-threaded support shaft" },
-        ],
-      },
-      {
-        title: "Actuation & sensing",
-        items: [
-          { name: "5V DC water pump", detail: "Prototype spraying/irrigation actuation" },
-          { name: "LoRa module", detail: "LPWAN sensor/telemetry communication" },
-          { name: "Environmental sensors", detail: "Temperature/humidity, soil moisture, EC/pH (as applicable)" },
+          { name: "ESP32 DevKit V1", detail: "Main controller / connectivity (prototype)", image: ESP32 },
+          { name: "RC522 RFID module", detail: "13.56 MHz plant-level identification", image: RFIDReader },
+          { name: "RFID cards/tags", detail: "Unique plant IDs placed per plant", image: RFIDCard },
+          { name: "NEMA 17 stepper", detail: "Vertical scanning mechanism drive", image: Stepper },
+          { name: "A4988 driver", detail: "1/16 microstepping",image: A4988 },
+          { name: "0.5 m threaded rod", detail: "Vertical motion (lead screw style)", image: ThreadRod },
+          { name: "0.75 m guide rod", detail: "Non-threaded support shaft", image: GuideRod },
+          { name: "5V DC water pump", detail: "Prototype spraying/irrigation actuation", image: Pump },
         ],
       },
     ],

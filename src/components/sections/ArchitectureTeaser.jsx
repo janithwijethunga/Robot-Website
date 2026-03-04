@@ -42,7 +42,6 @@ export default function ArchitectureTeaser({ content }) {
           <motion.div variants={fadeUp} className="lg:col-span-5">
             <Card className="p-4">
               <img src={content.diagramSrc} alt={content.diagramAlt} className="w-full h-auto rounded-2xl" loading="lazy" />
-              <div className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">{content.diagramAlt}</div>
             </Card>
           </motion.div>
         </motion.div>

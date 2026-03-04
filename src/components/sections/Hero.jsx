@@ -8,7 +8,7 @@ import { fadeUp, stagger } from "../../utils/motion";
 
 export default function Hero({ content }) {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative h-screen overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div className="h-full w-full bg-grid dark:bg-grid-dark" />
         <div className="absolute -top-24 right-[-120px] h-[340px] w-[340px] rounded-full bg-primary-500/10 blur-3xl" />
@@ -42,12 +42,10 @@ export default function Hero({ content }) {
               <img
                 src={content.illustrationSrc}
                 alt={content.illustrationAlt}
-                className="w-full h-auto"
+                className="w-full h-1/2"
                 loading="lazy"
               />
-              <div className="mt-4 text-sm text-neutral-600 dark:text-neutral-300">
-                {content.illustrationAlt}
-              </div>
+            
             </div>
           </motion.div>
         </motion.div>

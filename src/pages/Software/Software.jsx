@@ -58,6 +58,7 @@ export default function Software() {
                 <li key={i.name}>
                   <div className="text-sm font-semibold">{i.name}</div>
                   <div className="text-sm text-neutral-600 dark:text-neutral-300">{i.detail}</div>
+                  
                 </li>
               ))}
             </ul>

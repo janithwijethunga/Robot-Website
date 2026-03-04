@@ -14,7 +14,7 @@ export default function Metrics({ content }) {
           variants={stagger(0.06)}
           initial="hidden"
           animate={visible ? "show" : "hidden"}
-          className="grid gap-4 sm:grid-cols-2 lg:grid-cols-6"
+          className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
           {content.items.map((m) => (
             <motion.div key={m.label} variants={fadeUp}>
