@@ -36,17 +36,9 @@ export default function Features() {
   const tabs = useMemo(() => c.tabs, [c.tabs]);
 
   return (
-    <Container className="py-16 sm:py-20">
+    <Container className="py-16 sm:py-20 h-screen">
       <SectionHeading title={c.heading.title} subtitle={c.heading.subtitle} />
-      <div className="mt-8 grid gap-6 lg:grid-cols-12 lg:items-start">
-        <div className="lg:col-span-4">
-          <Card className="p-4">
-            <div className="aspect-[4/3] overflow-hidden rounded-2xl">
-              <img src={featuresDummy} alt="Features page placeholder" className="h-full w-full object-cover" loading="lazy" />
-            </div>
-          </Card>
-        </div>
-
+      <div className="mt-8 ">
         <div className="lg:col-span-8">
           <Tabs
             items={tabs}
@@ -54,7 +46,7 @@ export default function Features() {
             render={(tab) => {
             if (tab.key === "modules") {
               return (
-                <div className="grid gap-4 lg:grid-cols-2">
+                <div className="grid gap-4 lg:grid-cols-3">
                   {siteContent.modules.map((m) => {
                     const Icon = m.icon;
                     return (
@@ -87,7 +79,7 @@ export default function Features() {
 
             if (tab.key === "features") {
               return (
-                <div className="grid gap-4 lg:grid-cols-2">
+                <div className="grid gap-4 lg:grid-cols-3">
                   {siteContent.features.map((f) => {
                     const Icon = f.icon;
                     return (
@@ -110,7 +102,7 @@ export default function Features() {
             }
 
               return (
-                <div className="grid gap-4 lg:grid-cols-2">
+                <div className="grid gap-4 lg:grid-cols-3">
                   <ListBlock
                     title="Hardware strengths"
                     description="Low-cost prototyping choices optimized for structured polytunnel movement."

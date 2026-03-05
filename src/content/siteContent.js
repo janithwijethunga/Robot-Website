@@ -47,9 +47,6 @@ export const siteContent = {
     },
     links: [
       { label: "Home", href: "/" },
-      { label: "Project Overview", href: "/about" },
-      { label: "Architecture", href: "/architecture" },
-      { label: "Features & Modules", href: "/features" },
       { label: "Hardware", href: "/hardware" },
       { label: "Software", href: "/software" },
       { label: "Results", href: "/results" },
@@ -143,22 +140,7 @@ export const siteContent = {
         },
       ],
     },
-    architectureTeaser: {
-      heading: { title: "System architecture", subtitle: "A clean pipeline: sense → decide → act → log." },
-      bullets: [
-        "Line-following navigation and RFID plant identification",
-        "Leaf scanning with vertical mechanism and image capture",
-        "ML inference and decision output (spray/skip)",
-        "Mobile app status + plant profiles + event logs",
-      ],
-      cta: { label: "View full architecture", href: "/architecture" },
-      diagramAlt: "Architecture diagram placeholder",
-      diagramSrc: "/src/assets/architecture-diagram.svg",
-      modal: {
-        title: "Architecture Diagram",
-        description: "High-level system blocks and data flow.",
-      },
-    },
+    
     resultsTeaser: {
       heading: { title: "Results snapshot", subtitle: "Prototype performance indicators and evaluation notes." },
       cards: [
@@ -361,12 +343,7 @@ export const siteContent = {
       description: "Robot status, scan events, WiFi strength, and plant profiles in one place.",
       tag: "UX",
     },
-    {
-      icon: Radio,
-      title: "LoRa-enabled networking",
-      description: "LPWAN coverage for telemetry and alerts in low-connectivity environments.",
-      tag: "IoT",
-    },
+   
     {
       icon: ScanEye,
       title: "Leaf imaging & detection",
@@ -396,13 +373,7 @@ export const siteContent = {
       description: "YOLOv8n model detects leaf diseases and triggers actions.",
       bullets: ["Classes: healthy, downy mildew, powdery mildew", "mAP: 0.92", "Precision: 0.96, Recall: 0.98"],
     },
-    {
-      key: "lora",
-      icon: Radio,
-      title: "LoRa communication",
-      description: "LPWAN networking for sensor telemetry and farm alerts under intermittent internet.",
-      bullets: ["Low power, long range", "Sensor-to-gateway architecture", "Supports resilience goals"],
-    },
+   
     {
       key: "irrigation",
       icon: Droplets,
@@ -410,20 +381,8 @@ export const siteContent = {
       description: "Actuation control for water delivery and targeted spraying.",
       bullets: ["Prototype: 5V pump", "Timed pulses for control", "Safety interlocks recommended"],
     },
-    {
-      key: "fertigation",
-      icon: Sprout,
-      title: "Fertilization planning",
-      description: "Stage-aware nutrient planning using telemetry and growth context.",
-      bullets: ["Sensor-driven decisions", "Schedule-based recommendations", "Extensible for closed-loop control"],
-    },
-    {
-      key: "waterStress",
-      icon: Leaf,
-      title: "Water stress management",
-      description: "Detect risk conditions and trigger alerts/actions based on microclimate and soil status.",
-      bullets: ["Moisture and environment context", "Threshold + trend logic", "Supports prevention workflows"],
-    },
+  
+  
   ],
 
   hardware: {
